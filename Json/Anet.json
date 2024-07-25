@@ -1,0 +1,10 @@
+{
+  "dataset": "actnet",
+  "Image": "/mnt/add_disk/MMVH/act/act_vit.h5",
+  "Audio": "/mnt/add_disk/MMVH/act/AST_act.h5",
+  "num_class": 200,
+  "train_list": "/home/sunzhe/dataset/act/actnet_train_split.txt",
+  "val_list": "/home/sunzhe/dataset/act/val.txt",
+  "test_list": "/home/sunzhe/dataset/act/test.txt",
+  "retrieval_list": "/home/sunzhe/dataset/act/actnet_train_split.txt"
+}

@@ -1,0 +1,10 @@
+{
+  "dataset": "fcvid",
+  "Image": "/mnt/add_disk/MMVH/act/fcvid_vit_train.h5",
+  "Audio": "/mnt/add_disk/MMVH/act/AST_fcvid_5s.h5",
+  "num_class": 239,
+  "train_list": "/mnt/add_disk/MMVH/fcvid/train.txt",
+  "val_list": "/mnt/add_disk/MMVH/fcvid/val.txt",
+  "test_list": "/mnt/add_disk/MMVH/fcvid/test.txt",
+  "retrieval_list": "/mnt/add_disk/MMVH/fcvid/train.txt"
+}
