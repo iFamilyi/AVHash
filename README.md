@@ -1,5 +1,12 @@
 # AVHash
 This repository is the PyTorch implementation of ACM MM 2024 (CCF A) paper: "AVHash:Joint Audio-Visual Hashing for Video Retrieval".
+<p align="center">
+  <img src="./img/architecture.svg">
+</p>
+
+We propose a tri-level Transformer-based audio-visual hashing technique for video retrieval, named AVHash. It first processes audio and visual signals separately using pre-trained AST and ViT large models, and then projects temporal audio and key frames into a shared latent semantic space using a Transformer encoder. Subsequently, a gated attention mechanism is designed to fuse the paired audio-visual signals in the video, followed by another Transformer encoder leading to the final video representation. 
+
+Experimental results show that AVHash significantly outperforms existing video hashing methods in video retrieval tasks. Furthermore, ablation studies reveal that while video hashing based solely on visual signals achieves commendable mAP scores, the incorporation of audio signals can further boost its performance for video retrieval.
 
 ## Catalogue
 
@@ -91,6 +98,7 @@ pip install -r requirements.txt
       - The vectors dataset contains the image or audio features of the video, with a shape of (25, 768) and a type of float32.
 ​
 3. Dataset Splitting
+   
    Split the dataset into training, validation, and test sets evenly based on categories. The file IDs for different data splits are stored in `train.txt`, `test.txt`, and `val.txt` files respectively.
    
    **ActivityNet** contents are as follows, with each line including: videoname, video frame count, category.
@@ -109,7 +117,7 @@ pip install -r requirements.txt
    ...
    ```
    
-4. Configure the **Anet.json** and **fcvid.json** file in ./Json/
+5. Configure the **Anet.json** and **fcvid.json** file in ./Json/
    ```
    {
    "dataset":  dataset ("actnet" or "fcvid")
@@ -170,3 +178,21 @@ pip install -r requirements.txt
   - `--weight_path`: the path to the weights to be loaded.
 
  
+ ## Citation
+
+If you find this repository useful, please consider citing our work:
+
+```
+
+```
+
+ ## Contact
+
+For questions and further information about this research, please don't hesitate to reach out to our team leads:
+
+| Name | Email |
+|------|-------|
+| Yuxiang Zhou | yuxiang.zhou@bupt.edu.cn |
+| Yong Chen | yong.chen@bupt.edu.cn |
+
+We welcome collaboration opportunities and are happy to provide additional details about our work.
