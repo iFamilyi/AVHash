@@ -183,12 +183,12 @@ pip install -r requirements.txt
 If you find this repository useful, please consider citing our work:
 
 ```
-
+Yuxiang Zhou, Zhe Sun, Rui Liu, Yong Chen (Corresponding), Dell Zhang. AVHash: Joint Audio-Visual Hashing for Video Retrieval. ACM Multimedia 2024.
 ```
 
  ## Contact
 
-For questions and further information about this research, please don't hesitate to reach out to our team leads:
+For questions and further information about this research, please don't hesitate to contact us:
 
 | Name | Email |
 |------|-------|
